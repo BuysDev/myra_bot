@@ -6,9 +6,8 @@ createCommand({
 	description: "Replies with pong 🏓",
 	type: ApplicationCommandType.ChatInput,
 	async run(interaction){
-		await interaction.reply({
-			flags: ["Ephemeral"], 
-			content: `Pong 🏓`,
+		await interaction.reply({ 
+			content: `Olá, ${interaction.user}. Estou com \`${interaction.client.ws.ping}\`ms de latência! 🏓`
 		});
 	}
 });

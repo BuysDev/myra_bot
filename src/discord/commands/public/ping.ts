@@ -1,12 +1,12 @@
 import { createCommand } from "#base";
-import { ApplicationCommandType } from "discord.js";
+import { ChatInput } from "../../config/index.js";
 
 createCommand({
 	name: "ping",
-	description: "Replies with pong 🏓",
-	type: ApplicationCommandType.ChatInput,
+	description: "Retorna a latência do bot.",
+	type: ChatInput,
 	async run(interaction){
-		await interaction.reply({ 
+		await interaction.reply({
 			content: `Olá, ${interaction.user}. Estou com \`${interaction.client.ws.ping}\`ms de latência! 🏓`
 		});
 	}

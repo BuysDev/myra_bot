@@ -28,7 +28,6 @@
 		"paths": {
 			"#env": ["./src/env.ts"],
 			"#base": ["./src/discord/base/index.ts"],
-			"#functions": ["./src/functions/index.ts"],
 			"#database": ["./src/database/index.ts"],
 			"#server": ["./src/server/index.ts"],
 			"#menus": ["./src/menus/index.ts"],
